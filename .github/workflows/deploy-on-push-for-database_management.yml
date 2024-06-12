@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: nefelibata0531/my-final-work-website:latest
+          tags: nefelibata0531/my-final-work-db:latest
       -
         name: copy docker-compose-prod.yml via ssh password
         uses: appleboy/scp-action@v0.1.4
