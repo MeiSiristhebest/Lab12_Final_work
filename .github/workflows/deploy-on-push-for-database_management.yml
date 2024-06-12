@@ -1,4 +1,4 @@
-name: Deploy frontend application for 9999
+name: Deploy frontend application for database management
 'on':
   push:
     branches:
