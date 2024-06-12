@@ -20,6 +20,8 @@ services:
       PMA_HOST: db
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: 123123
+      COOKIE_SECURE: false
+      TRUSTED_PROXY: 1 
  
 volumes:
   db_data:
