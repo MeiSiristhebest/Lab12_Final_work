@@ -31,7 +31,6 @@
            host: ${{ secrets.HOST_SERVER }}
            username: ${{ secrets.HOST_USER_NAME }}
            key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
-           password: ${{ secrets.SSH_PASSPHRASE }}
            port: 22
            source: "docker-compose.yml"
            target: "/home/ecs-user/frontend"
@@ -41,7 +40,6 @@
            host: ${{ secrets.HOST_SERVER }}
            username: ${{ secrets.HOST_USER_NAME }}
            key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
-           password: ${{ secrets.SSH_PASSPHRASE }}
            port: 22
            script: |
              cd /home/ecs-user/frontend
