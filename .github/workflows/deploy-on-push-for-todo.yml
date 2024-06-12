@@ -1,8 +1,8 @@
-name: Deploy frontend application for database management
+name: Deploy frontend application for todo
 'on':
   push:
     branches:
-      - prod
+      - todo
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
       -
-        name: prepare the docker-compose-prod run
+        name: prepare the docker-compose-todo run
         run: |
               ls -l
       -
@@ -34,14 +34,14 @@ jobs:
           push: true
           tags: nefelibata0531/my-final-work-website:latest
       -
-        name: copy docker-compose-prod.yml via ssh password
+        name: copy docker-compose-todo.yml via ssh password
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{secrets.HOST_SERVER}}
           username: ${{ secrets.HOST_USER_NAME }}
           key: ${{ secrets.HOST_SSH_PRIVATE_KEY }}
           port: 22
-          source: "docker-compose-prod.yml"
+          source: "docker-compose-todo.yml"
           target: "/home/ecs-user/frontend"    
       -
         name:   docker compose
@@ -54,7 +54,7 @@ jobs:
           script: |
             cd /home/ecs-user/frontend
             echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
-            docker compose -f docker-compose-prod.yml down
-            docker compose -f docker-compose-prod.yml pull
-            docker compose -f docker-compose-prod.yml up -d
+            docker compose -f docker-compose-todo.yml down
+            docker compose -f docker-compose-todo.yml pull
+            docker compose -f docker-compose-todo.yml up -d
             rm -rf /home/ecs-user/frontend
