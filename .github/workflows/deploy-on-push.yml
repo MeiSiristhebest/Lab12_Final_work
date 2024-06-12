@@ -34,7 +34,7 @@
            password: ${{ secrets.SSH_PASSPHRASE }}
            port: 22
            source: "docker-compose.yml"
-           target: "/home/root/frontend"
+           target: "/home/ecs-user/frontend"
        - name: Docker Compose
          uses: appleboy/ssh-action@v0.1.10
          with:
@@ -44,10 +44,10 @@
            password: ${{ secrets.SSH_PASSPHRASE }}
            port: 22
            script: |
-             cd /home/root/frontend
+             cd /home/ecs-user/frontend
              echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
              docker compose down
              docker compose pull
              docker compose up -d
-             rm -rf /home/root/frontend
+             rm -rf /home/ecs-user/frontend
            
