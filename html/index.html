@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>SE234 Albums</title>
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+      body {
+        margin-top: 20px;
+      }
+      .card-style1 {
+        box-shadow: 0px 0px 10px 0px rgb(89 75 128 / 9%);
+      }
+      .border-0 {
+        border: 0 !important;
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+      }
+
+      section {
+        padding: 120px 0;
+        overflow: hidden;
+        background: #fff;
+      }
+      .mb-2-3,
+      .my-2-3 {
+        margin-bottom: 2.3rem;
+      }
+
+      .section-title {
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+      }
+      .text-primary {
+        color: #ceaa4d !important;
+      }
+      .text-secondary {
+        color: #15395a !important;
+      }
+      .font-weight-600 {
+        font-weight: 600;
+      }
+      .display-26 {
+        font-size: 1.3rem;
+      }
+
+      @media screen and (min-width: 992px) {
+        .p-lg-7 {
+          padding: 4rem;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .p-md-6 {
+          padding: 3.5rem;
+        }
+      }
+      @media screen and (min-width: 576px) {
+        .p-sm-2-3 {
+          padding: 2.3rem;
+        }
+      }
+      .p-1-9 {
+        padding: 1.9rem;
+      }
+
+      .bg-secondary {
+        background: #15395a !important;
+      }
+      @media screen and (min-width: 576px) {
+        .pe-sm-6,
+        .px-sm-6 {
+          padding-right: 3.5rem;
+        }
+      }
+      @media screen and (min-width: 576px) {
+        .ps-sm-6,
+        .px-sm-6 {
+          padding-left: 3.5rem;
+        }
+      }
+      .pe-1-9,
+      .px-1-9 {
+        padding-right: 1.9rem;
+      }
+      .ps-1-9,
+      .px-1-9 {
+        padding-left: 1.9rem;
+      }
+      .pb-1-9,
+      .py-1-9 {
+        padding-bottom: 1.9rem;
+      }
+      .pt-1-9,
+      .py-1-9 {
+        padding-top: 1.9rem;
+      }
+      .mb-1-9,
+      .my-1-9 {
+        margin-bottom: 1.9rem;
+      }
+      @media (min-width: 992px) {
+        .d-lg-inline-block {
+          display: inline-block !important;
+        }
+      }
+      .rounded {
+        border-radius: 0.25rem !important;
+      }
+    </style>
+  </head>
+
+  <section class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-4 mb-sm-5">
+          <div class="card card-style1 border-0">
+            <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                    src="../docs/assets/20222115.jpg"
+                    alt="..."
+                    class="img-thumbnail"
+                    width="500px" height="500px" alt="My PM"
+                  />
+                </div>
+                <div class="col-lg-6 px-xl-10">
+                  <div
+                    class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded"
+                  >
+                    <h2 class="h2 text-white mb-0">Tianxiang Mei</h2>
+                    <h4 class="h4 text-white mb-0"
+                    style="line-height: 2em">Student ID: 
+                      <span class="text-primary">20222115</span>
+                    </h4>
+                  </div>
+                  <ul class="list-unstyled mb-1-9">
+                    <li class="mb-2 mb-xl-3 display-28">
+                        <span
+                          class="display-26 text-secondary me-2 font-weight-600"
+                          >University:</span
+                        >
+                        North Minzu University
+                      </li>
+                    <li class="mb-2 mb-xl-3 display-28">
+                      <span
+                        class="display-26 text-secondary me-2 font-weight-600"
+                        >Department:</span
+                      >
+                     Software Engineering 
+                    </li>
+                    <li class="mb-2 mb-xl-3 display-28">
+                      <span
+                        class="display-26 text-secondary me-2 font-weight-600"
+                        >Grade:</span
+                      >
+                      Sophomore
+                    </li>
+                    <li class="mb-2 mb-xl-3 display-28">
+                      <span
+                        class="display-26 text-secondary me-2 font-weight-600"
+                        >Email:</span
+                      >
+                      MTx1534572236@outlook.com
+                    </li>
+                    <li class="mb-2 mb-xl-3 display-28">
+                      <span
+                        class="display-26 text-secondary me-2 font-weight-600"
+                        >WeChat:</span
+                      >
+                     DerTcmMtx_2319
+                    </li>
+
+                  </ul>
+                  <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
+                    <li>
+                      <a href="#!"><i class="ti-twitter-alt"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="ti-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="ti-pinterest"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="ti-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 mb-4 mb-sm-5">
+          <span class="section-title text-primary mb-3 mb-sm-4"
+          >Education</span>
+          <p>
+            Bachelor of Science in Computer Science, North Minzu University (Expected Graduation: May 2026)
+          </p>
+            Relevant Courses: Data Structures, Algorithms, Machine Learning
+          <p>
+          </p>
+        </div>
+        <div class="col-lg-12 mb-4 mb-sm-5">
+          <div>
+            <span class="section-title text-primary mb-3 mb-sm-4"
+              >About Me</span>
+            <p>
+              Hello there!     
+              Allow me to introduce myself – I'm Tianxiang Mei, 
+              an ambitious and intellectually curious undergraduate immersed in the 
+              dynamic world of Computer Science at the esteemed North Minzu University.     
+              From a young age, 
+              I've been captivated by the intricate dance of algorithms and the boundless potential of technology to transform lives.     
+              My journey in this field has been fueled by a profound love for coding, 
+              seeing each line of code as a brushstroke painting the future's digital landscape.
+            </p>
+            <p class="mb-0">
+              What sets me apart is not just my technical prowess, but a genuine enthusiasm for unraveling complex problems.     
+              I view obstacles as opportunities for innovation, a mindset that has led me to excel in numerous projects, 
+              where I've employed creative solutions to streamline processes and enhance user experiences.     
+              My academic ventures have been punctuated by a series of 'eureka' moments, 
+              solidifying my resolve to make a meaningful impact within the technology sector.
+            </p>
+            <p class="mb-0">
+              Collaboration sits at the heart of my learning philosophy.     
+              I firmly believe that the best ideas stem from the synergy of diverse perspectives.     
+              Whether it's leading a team through a hackathon challenge or contributing to open-source projects, 
+              I actively seek out opportunities to work alongside individuals who share my passion for pushing the boundaries of what's possible.     
+              These collaborative efforts have honed my leadership abilities, teaching me the art of effective communication and teamwork.
+            </p>
+            <p class="mb-0">
+              Looking ahead, I'm eager to bridge the gap between theory and practice.     
+              I'm constantly on the lookout for real-world applications where I can leverage my knowledge in areas such as machine learning, 
+              data analytics, and software development.     
+              My aspiration is to contribute to projects that not only solve immediate challenges but also pave the way for sustainable technological advancements.
+            </p>
+            <p class="mb-0">
+              In my free time, you might find me delving into the latest tech blogs, 
+              attending meetups to engage with like-minded enthusiasts, 
+              or even tinkering with personal projects that explore the intersections of technology and social good.     
+              I'm equally passionate about sharing my knowledge, often mentoring younger students in coding, 
+              hoping to ignite in them the same spark that guided me towards this fascinating discipline.
+            </p>
+            <p class="mb-0">
+              In summary, I am Tianxiang Mei, a committed learner, 
+              an avid problem-solver, and a future technologist eager to leave a positive footprint in the digital world.     
+              I am open to collaborations, mentorship, and any opportunities that align with my goal of driving positive change through technology.     
+              Let's connect and innovate together!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+              <div class="mb-4 mb-sm-5">
+                <span class="section-title text-primary mb-3 mb-sm-4"
+                  >Skill</span
+                >
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">Java</div>
+                    <div class="col-6 text-end">80%</div>
+                  </div>
+                </div>
+                <div
+                  class="custom-progress progress progress-medium mb-3"
+                  style="height: 4px"
+                >
+                  <div
+                    class="animated custom-bar progress-bar slideInLeft bg-secondary"
+                    style="width: 80%"
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="10"
+                    role="progressbar"
+                  ></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">Git</div>
+                    <div class="col-6 text-end">90%</div>
+                  </div>
+                </div>
+                <div
+                  class="custom-progress progress progress-medium mb-3"
+                  style="height: 4px"
+                >
+                  <div
+                    class="animated custom-bar progress-bar slideInLeft bg-secondary"
+                    style="width: 90%"
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="70"
+                    role="progressbar"
+                  ></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">Docker</div>
+                    <div class="col-6 text-end">75%</div>
+                  </div>
+                </div>
+                <div
+                  class="custom-progress progress progress-medium mb-3"
+                  style="height: 4px"
+                >
+                  <div
+                    class="animated custom-bar progress-bar slideInLeft bg-secondary"
+                    style="width: 75%"
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="70"
+                    role="progressbar"
+                  ></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row">
+                    <div class="col-6">Communication</div>
+                    <div class="col-6 text-end">60%</div>
+                  </div>
+                </div>
+                <div
+                  class="custom-progress progress progress-medium"
+                  style="height: 4px"
+                >
+                  <div
+                    class="animated custom-bar progress-bar slideInLeft bg-secondary"
+                    style="width: 60%"
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="70"
+                    role="progressbar"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <span class="section-title text-primary mb-3 mb-sm-4"
+                  >Education</span
+                >
+                <p>My academic journey has been a continuous exploration and self-challenge, peppered with milestones that have deeply enriched my understanding of Computer Science. Here are the highlights:</p>
+                 <ul> 
+                  <li>
+                    <strong>Bachelor of Science in Computer Science, North Minzu University</strong>
+                  <br>Expected Graduation: May 2026<br> 
+                  Within the esteemed walls of North Minzu University, 
+                  I've delved into the core curriculum of Computer Science while actively participating in research initiatives and practical projects. 
+                  This vibrant academic environment has ignited a keen interest in cutting-edge fields such as Artificial Intelligence, 
+                  Big Data Analytics, and Cybersecurity, laying a robust foundation for my future career path.</li> 
+                  <li>
+                    <strong>Key Courses & Accomplishments</strong>
+                    <br> 
+                    <ul> 
+                      <li>
+                        <strong>Data Structures and Algorithms</strong>: I've mastered the principles of organizing data effectively and implementing efficient algorithms, honing my logical reasoning and problem-solving skills through rigorous problem sets.</li>
+                         <li><strong>Machine Learning</strong>: With a strong grasp of both supervised and unsupervised learning methodologies, 
+                          along with deep learning techniques, I've successfully contributed to projects involving image recognition and natural language processing, 
+                          demonstrating my ability to apply theoretical knowledge to real-world datasets.</li>
+                           <li><strong>Software Engineering</strong>: Collaborating on multiple software development projects has refined my project management and teamwork abilities. Applying Agile methodologies, I've enhanced my understanding of the entire software development lifecycle.</li>
+                            <li><strong>Database Systems</strong>: experienced in designing, optimizing, and querying both relational databases and NoSQL systems, enabling me to devise efficient data storage strategies tailored to specific application needs.</li> 
+                          </ul> These courses have not only fortified my technical prowess but also nurtured my adaptability to new technologies and problem-solving acumen.</li> </ul> 
+                          <p>Beyond the classroom, I've been an active participant in tech seminars, coding competitions, and innovation clubs, broadening my horizons and fostering growth through hands-on experiences. I am resolute in my belief that ongoing education and relentless effort will empower me to make significant contributions to the realm of technology and research in the years to come.</p>
+              </div>
+              <div>
+                <span class="section-title text-primary mb-3 mb-sm-4"
+                  >Achievements</span>
+                  <p>
+                    Won a national scholarship and the honorary title of Merit student
+                  </p>
+                  <p>
+                    Won the third prize in the Computer Application Ability and number contest
+
+                  </p>
+                </div>
+
+                <div>
+                  <span class="section-title text-primary mb-3 mb-sm-4" 
+                    >Interests</span>
+                    <p>While coding occupies a significant portion of my time, I find immense joy in a myriad of activities beyond the digital realm, each one contributing to my holistic development and nurturing my creative spirit.</p> 
+                    <strong>STEM Advocacy & Volunteering:</strong> 
+                    Passionate about inspiring the next generation of innovators, 
+                    I regularly dedicate my weekends to volunteering at local STEM workshops. 
+                    There, I mentor young minds, sharing my love for technology and fostering their problem-solving abilities through engaging, 
+                    hands-on experiments. Witnessing their 'aha!' moments fuels my own drive to continue learning and giving back to the community.</p> 
+                    <p><strong>Nature Exploration & Hiking:</strong> 
+                      To counterbalance the hours spent in front of a screen, 
+                      I often venture into nature's embrace, particularly in the breathtaking landscapes of national parks.
+                      Hiking not only invigorates my body but also clears my mind, allowing for fresh perspectives and creative solutions to percolate during these serene strolls amidst towering trees and winding trails.</p> 
+                      <p><strong>Sci-Fi Enthusiast:</strong> Imagination knows no bounds when it comes to my love for science fiction literature. 
+                        When night falls, you'll likely find me engrossed in the pages of a captivating sci-fi novel, exploring fantastical worlds and futuristic concepts that challenge conventional thinking. These stories often serve as a springboard for my own ideas, merging the realms of possibility and technology in exciting, speculative ways.</p> 
+                        <p><strong>Musical Pursuits:</strong> 
+                          Another realm where I find solace and inspiration is music. Playing the guitar, 
+                          a hobby picked up during my early college days, has become a therapeutic outlet. 
+                          The harmonious blend of melody and rhythm complements my analytical side, striking a balance that enriches my overall well-being.</p> 
+                          <p><strong>Culinary Adventures:</strong> Lastly, I'm an avid home cook who delights in experimenting with flavors from around the world. 
+                            To me, the kitchen is another laboratory where creativity thrives—albeit with tastier results! Trying out new recipes and whipping up dishes for friends and family brings a sense of joy and connection that complements my more solitary pursuits.</p> 
+                            <p>This diverse array of interests not only rejuvenates me but also fosters a broader worldview, 
+                              enhancing my ability to think critically, empathize deeply, and innovate relentlessly in my academic and professional pursuits.</p>
+                  </div>
+                  <div>
+                    <span class="section-title text-primary mb-3 mb-sm-4"
+                      >Contact Me</span>
+                      <p> Email: MTx1534572236@outlook.com</p>
+                        <span
+                          class="section-title text-primary mb-3 mb-sm-4"
+                          >WeChat:</span>
+                          <p>DerTcmMtx_2319</p>                      
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>

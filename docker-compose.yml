@@ -1,0 +1,8 @@
+version: '3'
+services:
+  server:
+    image: nefelibata0531/my-final-work-website:latest
+    ports:
+      - 8088:80
+    volumes:
+      - ./html:/usr/share/nginx/html
